@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  --dark-blue: #0D1526;
+  --light-blue: #89A5E2;
+  --bg-color: #fff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-title: 'Red Hat Display', sans-serif;
+  --color-dark-blue: #0D1526;
+  --color-light-blue: #89A5E2;
+  --color-bg: #F8FAFE;
+  --color-bg-color: #F8FAFE;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #fff;
+  }
+}
+
+body {
+  background: #ffffff;
+  color: var(--dark-blue);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-font {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.05em;
+}
