@@ -37,7 +37,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
               alt="AutoWahab Logo"
               width={250}
               height={100}
-              className="h-6 md:h-10 w-auto"
+              className="h-8 md:h-10 w-auto"
               unoptimized
             />
           </Link>
