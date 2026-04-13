@@ -1,6 +1,6 @@
 export default function TopBanner() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-[#141414] text-white py-2 px-4 text-xs">
+    <div className="hidden md:block fixed top-0 left-0 right-0 z-50 bg-[#141414] text-white py-2 px-4 text-xs">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
         {/* Left side - Contact Info */}
         <div className="flex items-center gap-4 md:gap-6">

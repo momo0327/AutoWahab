@@ -13,8 +13,19 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center">
+        {/* Mobile background */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="md:hidden absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/MobileHeader.jpg')",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        {/* Desktop background */}
+        <div
+          className="hidden md:block absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('/test6.jpg')",
           }}

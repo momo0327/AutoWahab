@@ -25,19 +25,19 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
 
   return (
     <nav
-      className={`fixed top-8 left-0 right-0 z-40 transition-colors duration-300 ${
+      className={`fixed top-0 md:top-8 left-0 right-0 z-40 transition-colors duration-300 ${
         isTransparent ? 'bg-transparent' : 'bg-white shadow-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-[5]">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center md:justify-center justify-start">
             <Image
               src={isTransparent ? "/logo2.png" : "/logo3.png"}
               alt="AutoWahab Logo"
               width={250}
               height={100}
-              className="h-10 w-auto"
+              className="h-6 md:h-10 w-auto"
               unoptimized
             />
           </Link>
