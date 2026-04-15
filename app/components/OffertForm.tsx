@@ -5,12 +5,11 @@ import { useState } from 'react';
 export default function OffertForm() {
   const [formData, setFormData] = useState({
     name: '',
+    companyName: '',
+    regNumber: '',
+    truckType: '',
     phone: '',
     email: '',
-    brand: '',
-    model: '',
-    year: '',
-    message: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -40,88 +39,94 @@ export default function OffertForm() {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Row 1: Year, Make, Model */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <select
-              name="year"
-              value={formData.year}
+          {/* Row 1: Name, Company Name */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Namn"
+              value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 focus:ring-2 focus:ring-light-blue focus:outline-none appearance-none cursor-pointer"
-              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1.5rem' }}
-            >
-              <option value="">Year</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
-              <option value="2019">2019</option>
-              <option value="2018">2018</option>
-              <option value="2017">2017</option>
-              <option value="2016">2016</option>
-              <option value="2015">2015</option>
-            </select>
+              className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 placeholder-gray-500 focus:ring-2 focus:ring-light-blue focus:outline-none"
+            />
+
+            <input
+              type="text"
+              name="companyName"
+              placeholder="Företagsnamn"
+              value={formData.companyName}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 placeholder-gray-500 focus:ring-2 focus:ring-light-blue focus:outline-none"
+            />
+          </div>
+
+          {/* Row 2: Reg Number, Truck Type */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="regNumber"
+              placeholder="Registreringsnummer"
+              value={formData.regNumber}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 placeholder-gray-500 focus:ring-2 focus:ring-light-blue focus:outline-none"
+            />
 
             <select
-              name="brand"
-              value={formData.brand}
+              name="truckType"
+              value={formData.truckType}
               onChange={handleChange}
               required
               className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 focus:ring-2 focus:ring-light-blue focus:outline-none appearance-none cursor-pointer"
               style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1.5rem' }}
             >
-              <option value="">Make</option>
-              <option value="Volvo">Volvo</option>
-              <option value="Scania">Scania</option>
-              <option value="Mercedes-Benz">Mercedes-Benz</option>
-              <option value="MAN">MAN</option>
-              <option value="DAF">DAF</option>
-              <option value="Iveco">Iveco</option>
-            </select>
-
-            <select
-              name="model"
-              value={formData.model}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 focus:ring-2 focus:ring-light-blue focus:outline-none appearance-none cursor-pointer"
-              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1.5rem' }}
-            >
-              <option value="">Model</option>
-              <option value="FH16">FH16</option>
-              <option value="R450">R450</option>
-              <option value="Actros">Actros</option>
+              <option value="">Typ av lastbil</option>
+              <option value="Dragbil">Dragbil</option>
+              <option value="Skåpbil">Skåpbil</option>
+              <option value="Kranbil">Kranbil</option>
+              <option value="Kranväxlare">Kranväxlare</option>
+              <option value="Lastväxlare">Lastväxlare</option>
+              <option value="Tippbil">Tippbil</option>
+              <option value="Flakbil">Flakbil</option>
+              <option value="Timmerbil">Timmerbil</option>
+              <option value="Betongbil">Betongbil</option>
+              <option value="Slamsugbil">Slamsugbil</option>
+              <option value="Chassi">Chassi</option>
             </select>
           </div>
 
-          {/* Row 2: Mileage, VIN, Button */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Row 3: Phone, Email */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
-              type="text"
+              type="tel"
               name="phone"
-              placeholder="Mileage"
+              placeholder="Telefonnummer"
               value={formData.phone}
               onChange={handleChange}
+              required
               className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 placeholder-gray-500 focus:ring-2 focus:ring-light-blue focus:outline-none"
             />
 
             <input
               type="email"
               name="email"
-              placeholder="VIN"
+              placeholder="E-post"
               value={formData.email}
               onChange={handleChange}
+              required
               className="w-full px-4 py-4 bg-gray-100 border-none rounded-lg text-gray-600 placeholder-gray-500 focus:ring-2 focus:ring-light-blue focus:outline-none"
             />
-
-            <button
-              type="submit"
-              className="w-full bg-dark-blue text-white py-4 px-6 rounded-lg font-semibold hover:bg-light-blue transition-colors duration-300"
-            >
-              Continue to step 2
-            </button>
           </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-dark-blue text-white py-4 px-6 rounded-lg font-semibold hover:bg-light-blue transition-colors duration-300"
+          >
+            Skicka förfrågan
+          </button>
         </form>
       </div>
     </section>

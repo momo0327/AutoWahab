@@ -1,55 +1,55 @@
 export default function EasySteps() {
   return (
-    <section className="py-24 md:py-32 px-4 bg-bg-color">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-title font-bold text-dark-blue mb-12 text-left md:text-center ">
-          Så här enkelt är det 
-        </h2>
+    <section className="py-24 md:py-32 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="inline-block text-light-blue px-6 py-2 rounded-full text-xl font-medium mb-6 font-title">
+            LÄTT SOM EN PLÄTT
+          </span>
+          <h2 className="text-3xl md:text-5xl font-title font-bold text-dark-blue">
+            Tre enkla steg till att sälja din lastbil
+          </h2>
+        </div>
 
+        {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Step 1 */}
-          <div className="text-left md:text-center">
-            <svg
-              className="w-16 h-16 text-light-blue mb-4 md:mx-auto"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
-              <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
-            </svg>
-            <h3 className="text-xl font-bold text-dark-blue mb-2">Fyll i Formuläret</h3>
-            <p className="text-gray-600">
-              Berätta om din lastbil och vad du vill sälja den för
+          {/* Step 1 - Contact Us */}
+          <div className="bg-bg-color rounded-2xl p-10 flex flex-col items-center text-center hover:shadow-md transition-all duration-300">
+            <div className="w-16 h-16 mb-8 flex items-center justify-center">
+              <svg className="w-16 h-16 text-dark-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-title font-bold text-dark-blue mb-4">Kontakta Oss</h3>
+            <p className="text-gray-600 text-base leading-relaxed">
+              Fyll i formuläret eller ring oss direkt. Berätta om din lastbil och vi hjälper dig vidare
             </p>
           </div>
 
-          {/* Step 2 */}
-          <div className="text-left md:text-center">
-            <svg
-              className="w-16 h-16 text-light-blue mb-4 md:mx-auto"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z" />
-            </svg>
-            <h3 className="text-xl font-bold text-dark-blue mb-2">Få En Offert</h3>
-            <p className="text-gray-600">
-              Vi kontaktar dig inom 24 timmar med ett konkurrenskraftigt erbjudande
+          {/* Step 2 - Receive Offer (Highlighted) */}
+          <div className="bg-dark-blue rounded-2xl p-10 flex flex-col items-center text-center text-white hover:shadow-xl transition-all duration-300">
+            <div className="w-16 h-16 mb-8 flex items-center justify-center">
+              <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-title font-bold mb-4">Ta Emot Offert</h3>
+            <p className="text-white/90 text-base leading-relaxed">
+              Vi återkommer snabbt med ett rättvist och konkurrenskraftigt erbjudande på din lastbil
             </p>
           </div>
 
-          {/* Step 3 */}
-          <div className="text-left md:text-center">
-            <svg
-              className="w-16 h-16 text-light-blue mb-4 md:mx-auto"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <h3 className="text-xl font-bold text-dark-blue mb-2">Få Betalt</h3>
-            <p className="text-gray-600">
-              Vi hämtar lastbilen och du får betalt direkt
+          {/* Step 3 - Get Paid */}
+          <div className="bg-bg-color rounded-2xl p-10 flex flex-col items-center text-center hover:shadow-md transition-all duration-300">
+            <div className="w-16 h-16 mb-8 flex items-center justify-center">
+              <svg className="w-16 h-16 text-dark-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-title font-bold text-dark-blue mb-4">Få Betalt</h3>
+            <p className="text-gray-600 text-base leading-relaxed">
+              Vi hämtar lastbilen och du får betalt direkt. Snabbt, enkelt och tryggt
             </p>
           </div>
         </div>

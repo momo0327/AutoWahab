@@ -25,8 +25,8 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
 
   return (
     <nav
-      className={`fixed top-0 md:top-8 left-0 right-0 z-40 transition-colors duration-300 ${
-        isTransparent ? 'bg-transparent' : 'bg-white shadow-md'
+      className={`fixed md:absolute top-0 md:top-8 left-0 right-0 z-40 transition-colors duration-300 md:bg-transparent ${
+        isTransparent ? 'bg-transparent' : 'bg-white shadow-md md:shadow-none'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-[5]">
