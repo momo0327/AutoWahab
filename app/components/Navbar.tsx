@@ -72,20 +72,12 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
             </a>
             <a
               href="tel:0723364384"
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full font-title text-sm font-bold transition-all duration-300 ${
-                isTransparent
-                  ? 'bg-white/90 backdrop-blur-md text-dark-blue border border-white/50 hover:bg-white'
-                  : 'bg-dark-blue text-white border border-dark-blue hover:bg-dark-blue/90'
-              }`}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-title text-sm font-bold transition-all duration-300 bg-white/90 backdrop-blur-md text-dark-blue border border-white/50 hover:bg-white"
             >
               <span className='font-bold'>Ring oss idag</span>
-              <div className={`rounded-full p-1.5 ${
-                isTransparent ? 'bg-dark-blue' : 'bg-white'
-              }`}>
+              <div className="rounded-full p-1.5 bg-dark-blue">
                 <svg
-                  className={`w-4 h-4 ${
-                    isTransparent ? 'text-white' : 'text-dark-blue'
-                  }`}
+                  className="w-4 h-4 text-white"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
