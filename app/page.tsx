@@ -34,17 +34,17 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-white px-4 max-w-7xl mx-auto w-full">
-          <h1 className="text-4xl md:text-7xl font-title font-bold mb-4">
+          <h1 className="text-5xl md:text-7xl font-title font-bold mb-4">
             Vi köper lastbilar <br /> tryggt & enkelt
           </h1>
-          <p className="text-sm md:text-xl text-white/80 mb-8 max-w-sm md:max-w-xl">
+          <p className="text-md md:text-xl text-white/80 mb-8 max-w-sm md:max-w-xl">
             Med över 20 års erfarenhet köper och säljer vi lastbilar med en smidig och trygg process från start till betalning. Kontakta oss för en enkel och smidig affär 
           </p>
           <a
             href="#offert-form"
             className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md text-white px-5 py-2 rounded-full font-title text-base hover:bg-white/30 transition-all duration-300 border border-white/30"
           >
-            <span>Sälj Lastbil</span>
+            <span>Sälj din Lastbil</span>
             <div className="bg-white rounded-full p-2">
               <svg
                 className="w-4 h-4 text-dark-blue"

@@ -36,10 +36,10 @@ export default function OmOss() {
           <div className="bg-white rounded-3xl p-8 flex flex-col justify-center items-center">
             <div className="text-center">
               <div className="text-7xl md:text-8xl font-title font-bold text-dark-blue mb-4" style={{ WebkitTextStroke: '2px', WebkitTextFillColor: 'transparent', WebkitTextStrokeColor: '#1e3a8a' }}>
-                245+
+                200+
               </div>
               <p className="text-lg text-gray-700 font-medium">
-                Lastbilar köpta per månad
+                Lastbilar köpta per år
               </p>
             </div>
           </div>

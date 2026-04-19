@@ -37,7 +37,15 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
               alt="AutoWahab Logo"
               width={250}
               height={100}
-              className="h-8 md:h-10 w-auto"
+              className="h-8 md:h-10 w-auto md:hidden"
+              unoptimized
+            />
+            <Image
+              src="/logo2.png"
+              alt="AutoWahab Logo"
+              width={250}
+              height={100}
+              className="hidden md:block h-8 md:h-10 w-auto"
               unoptimized
             />
           </Link>
@@ -123,50 +131,64 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 bg-white rounded-lg mt-2">
-            <div className="flex flex-col space-y-4 px-4 py-4">
-              <Link
-                href="/"
-                className="text-dark-blue hover:text-light-blue"
-                onClick={() => setIsOpen(false)}
-              >
-                Hem
-              </Link>
-              <Link
-                href="/om-oss"
-                className="text-dark-blue hover:text-light-blue"
-                onClick={() => setIsOpen(false)}
-              >
-                Om Oss
-              </Link>
-              <a
-                href="https://www.blocket.se"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-dark-blue hover:text-light-blue"
-              >
-                Blocketbutik
-              </a>
-              <a
-                href="tel:0723364384"
-                className="inline-flex items-center justify-center gap-2 bg-dark-blue text-white px-4 py-2 rounded-full font-title text-sm hover:bg-dark-blue/90 transition-all duration-300 border border-dark-blue"
-                onClick={() => setIsOpen(false)}
-              >
-                <span>Ring oss idag</span>
-                <div className="bg-white rounded-full p-1.5">
+          <div className="md:hidden fixed inset-0 bg-white z-50">
+            <div className="flex flex-col h-full">
+              {/* Header with Logo and Close Button */}
+              <div className="flex justify-between items-center px-4 h-20 border-b border-gray-200">
+                <Link href="/" onClick={() => setIsOpen(false)}>
+                  <Image
+                    src="/logo3.png"
+                    alt="AutoWahab Logo"
+                    width={200}
+                    height={80}
+                    className="h-8 w-auto"
+                    unoptimized
+                  />
+                </Link>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="text-dark-blue"
+                >
                   <svg
-                    className="w-4 h-4 text-dark-blue"
-                    fill="currentColor"
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      fillRule="evenodd"
-                      d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                      clipRule="evenodd"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
-                </div>
-              </a>
+                </button>
+              </div>
+
+              {/* Menu Items */}
+              <div className="flex flex-col flex-1">
+                   <Link
+                  href="/om-oss"
+                  className="text-dark-blue text-2xl font-semibold px-4 py-6 border-b border-gray-200 hover:bg-gray-50"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Om oss
+                </Link>
+                <Link
+                  href="/"
+                  className="text-dark-blue text-2xl font-semibold px-4 py-6 border-b border-gray-200 hover:bg-gray-50"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Köpa lastbil
+                </Link>
+                <Link
+                  href="/"
+                  className="text-dark-blue text-2xl font-semibold px-4 py-6 border-b border-gray-200 hover:bg-gray-50"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Blocketbutik
+                </Link>
+              </div>
             </div>
           </div>
         )}

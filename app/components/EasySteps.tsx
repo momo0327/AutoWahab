@@ -5,7 +5,7 @@ export default function EasySteps() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-light-blue px-6 py-2 rounded-full text-xl font-medium mb-6 font-title">
-            LÄTT SOM EN PLÄTT
+            ENKELT &  SNABBT
           </span>
           <h2 className="text-3xl md:text-5xl font-title font-bold text-dark-blue">
             Tre enkla steg till att sälja din lastbil

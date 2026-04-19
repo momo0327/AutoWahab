@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-bg text-dark-blue py-20 md:py-24 px-[4]">
+    <footer className="bg-bg text-dark-blue py-20 md:py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -14,7 +14,7 @@ export default function Footer() {
                 alt="AutoWahab Logo"
                 width={150}
                 height={60}
-                className="h-auto w-auto"
+                className="h-auto w-64 md:w-auto"
                 unoptimized
               />
             </div>

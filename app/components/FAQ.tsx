@@ -9,24 +9,24 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "Hur snabbt kan ni köpa min lastbil?",
-    answer: "Vi kontaktar dig inom 24 timmar med ett erbjudande. Om du accepterar kan vi hämta lastbilen och betala dig inom några dagar, beroende på var du befinner dig i Sverige."
+    question: "Vart finns ni?",
+    answer: "Vi finns i Göteborg, Gamlestadsvägen 20A"
+  },
+  {
+    question: "Köper ni i hela Sverige?",
+    answer: "Ja, vi köper lastbilar i hela Sverige och kan hämta var du än befinner dig."
+  },
+  {
+    question: "Vilka modeller köper ni?",
+    answer: "Vi köper alla typer av lastbilar, allt från dragbilar, skåpbilar, kranbilar, kranväxlare, krokbilar, timmerbilar, chassi osv."
   },
   {
     question: "Vilka märken köper ni?",
-    answer: "Vi köper lastbilar av alla märken - Volvo, Scania, MAN, Mercedes-Benz, DAF, Iveco och många fler. Oavsett märke, modell eller ålder kontaktar du oss för en värdering."
-  },
-  {
-    question: "Måste lastbilen vara i körbart skick?",
-    answer: "Nej, vi köper lastbilar i alla skick - körklara, reparationsbehövande eller skrotbilar. Beskriv bara skicket noggrant i formuläret så ger vi dig ett rättvist pris."
+    answer: "Vi alla märken, Volvo, Scania, Mercedes, Man och Daf"
   },
   {
     question: "Hur fungerar betalningen?",
-    answer: "Du får betalt direkt när vi hämtar lastbilen. Vi överför pengarna till ditt bankkonto eller betalar kontant om du föredrar det."
-  },
-  {
-    question: "Köper ni lastbilar i hela Sverige?",
-    answer: "Ja, vi köper lastbilar i hela Sverige och kan hämta var du än befinner dig. Transporten är inkluderad i vårt erbjudande."
+    answer: "Vi betalar direkt efter vi har fått fakturan"
   }
 ];
 
@@ -54,7 +54,7 @@ export default function FAQ() {
                 onClick={() => toggleFAQ(index)}
                 className="w-full py-6 text-left flex justify-between items-center"
               >
-                <span className="text-xl md:text-2xl font-bold text-dark-blue/70 pr-4">
+                <span className="text-xl md:text-2xl font-bold text-dark-blue pr-4">
                   {faq.question}
                 </span>
                 <svg

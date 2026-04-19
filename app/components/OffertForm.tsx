@@ -33,9 +33,9 @@ export default function OffertForm() {
           <button className="text-xl font-semibold text-dark-blue pb-3 border-b-2 border-dark-blue">
             Sälj Din Lastbil
           </button>
-          <button className="text-xl text-gray-400 pb-3">
+          {/* <button className="text-xl text-gray-400 pb-3">
             Hitta Din Nästa Lastbil
-          </button>
+          </button> */}
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -83,17 +83,24 @@ export default function OffertForm() {
               style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1.5rem' }}
             >
               <option value="">Typ av lastbil</option>
+              <option value="Betongbil">Betongbil</option>
+              <option value="BodBil">Bodbil</option>
+              <option value="Chassi">Chassi</option>
+              <option value="Djurtransport">Djurtransport</option>
               <option value="Dragbil">Dragbil</option>
-              <option value="Skåpbil">Skåpbil</option>
+              <option value="Flakbil">Flakbil</option>
+              <option value="Flisbil">Flisbil</option>
               <option value="Kranbil">Kranbil</option>
               <option value="Kranväxlare">Kranväxlare</option>
-              <option value="Lastväxlare">Lastväxlare</option>
-              <option value="Tippbil">Tippbil</option>
-              <option value="Flakbil">Flakbil</option>
-              <option value="Timmerbil">Timmerbil</option>
-              <option value="Betongbil">Betongbil</option>
+              <option value="Lastväxlare">Lastväxlare/krokbil</option>
+              <option value="Liftdumperil">Liftdumperbil</option>
+              <option value="Skåpbil">Skåpbil, kyl/frys/värme</option>
               <option value="Slamsugbil">Slamsugbil</option>
-              <option value="Chassi">Chassi</option>
+              <option value="Spannmålsbild">Spannmålsbild</option>
+              <option value="Tankbil">Tankbil</option>
+              <option value="Timmerbil">Timmerbil</option>
+              <option value="Tippbil">Tippbil</option>
+              <option value="Växelflak">Växelflak/Containerbil</option>
             </select>
           </div>
 
