@@ -26,7 +26,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
   return (
     <nav
       className={`fixed md:absolute top-0 md:top-8 left-0 right-0 z-40 transition-colors duration-300 md:bg-transparent ${
-        isTransparent ? 'bg-transparent' : 'bg-white shadow-md md:shadow-none'
+        isTransparent ? 'bg-transparent' : 'bg-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-[5]">
@@ -37,15 +37,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
               alt="AutoWahab Logo"
               width={250}
               height={100}
-              className="h-8 md:h-10 w-auto md:hidden"
-              unoptimized
-            />
-            <Image
-              src="/logo2.png"
-              alt="AutoWahab Logo"
-              width={250}
-              height={100}
-              className="hidden md:block h-8 md:h-10 w-auto"
+              className="h-8 md:h-10 w-auto"
               unoptimized
             />
           </Link>
@@ -69,7 +61,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
               Om Oss
             </Link>
             <a
-              href="https://www.blocket.se"
+              href="https://www.blocket.se/mobility/dealer/4729472/auto-wahab-export-ab"
               target="_blank"
               rel="noopener noreferrer"
               className={`hover:opacity-80 transition-opacity font-bold  text-sm  ${
@@ -181,13 +173,15 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
                 >
                   Köpa lastbil
                 </Link>
-                <Link
-                  href="/"
+                <a
+                  href="https://www.blocket.se/mobility/dealer/4729472/auto-wahab-export-ab"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-dark-blue text-2xl font-semibold px-4 py-6 border-b border-gray-200 hover:bg-gray-50"
                   onClick={() => setIsOpen(false)}
                 >
                   Blocketbutik
-                </Link>
+                </a>
               </div>
             </div>
           </div>
