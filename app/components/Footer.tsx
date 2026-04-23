@@ -42,11 +42,6 @@ export default function Footer() {
                   Blocketbutik
                 </a>
               </li>
-              <li>
-                <Link href="/kontakt" className="text-gray-900  hover:text-light-blue transition-colors">
-                  Kontakt
-                </Link>
-              </li>
             </ul>
           </div>
 
