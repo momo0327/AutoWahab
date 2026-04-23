@@ -59,7 +59,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 <a href="tel:+46701234567" className="hover:text-light-blue transition-colors">
-                  +46 70 123 45 67
+                 +46 76-276 00 05
                 </a>
               </li>
               <li className="flex items-start">
@@ -76,31 +76,14 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span>
-                  Lastbilsvägen 123<br />
-                  <span className="ml-7">123 45 Stockholm</span>
+                  Gamlestadsvägen 20A<br />
+                  <span className="ml-7">415 02 Göteborg</span>
                 </span>
               </li>
             </ul>
           </div>
 
           {/* Opening Hours */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Öppettider</h4>
-            <ul className="space-y-2 text-gray-900 text-sm">
-              <li className="flex justify-between">
-                <span>Måndag - Fredag:</span>
-                <span className="font-medium">08:00 - 17:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Lördag:</span>
-                <span className="font-medium">10:00 - 14:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Söndag:</span>
-                <span className="font-medium">Stängt</span>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Bar */}

@@ -15,7 +15,7 @@ export default function OmOss() {
             <div>
               <p className="text-lg md:text-xl text-light-blue font-semibold mb-4">Om oss</p>
               <h1 className="text-5xl md:text-6xl lg:text-6xl font-title text-dark-blue leading-tight mb-6">
-                Din pålitliga partner för lastbilar
+                Din pålitliga lastbilshandlare
               </h1>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
                 Med över 20 års erfarenhet hjälper vi företag och privatpersoner att köpa och sälja lastbilar i Sverige och internationellt
