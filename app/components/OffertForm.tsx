@@ -11,11 +11,43 @@ export default function OffertForm() {
     phone: '',
     email: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Tack för din förfrågan! Vi återkommer snart.');
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert('Tack för din förfrågan! Vi återkommer snart.');
+        setFormData({
+          name: '',
+          companyName: '',
+          regNumber: '',
+          truckType: '',
+          phone: '',
+          email: '',
+        });
+      } else {
+        alert('Ett fel uppstod. Vänligen försök igen.');
+        console.error('Error:', data);
+      }
+    } catch (error) {
+      alert('Ett fel uppstod. Vänligen försök igen.');
+      console.error('Error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -130,9 +162,10 @@ export default function OffertForm() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-dark-blue text-white py-4 px-6 rounded-lg font-semibold hover:bg-light-blue transition-colors duration-300"
+            disabled={isSubmitting}
+            className="w-full bg-dark-blue text-white py-4 px-6 rounded-lg font-semibold hover:bg-light-blue transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Skicka förfrågan
+            {isSubmitting ? 'Skickar...' : 'Skicka förfrågan'}
           </button>
         </form>
       </div>

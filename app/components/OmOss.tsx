@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Badge from './Badge';
 
 export default function OmOss() {
   return (
-    <section className="py-24 md:py-32 px-4 bg-gray-50">
+    <section className="py-24 md:py-32 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header Section - Two Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
           <div>
-            <h3 className="text-sm md:text-xl text-light-blue uppercase tracking-wider mb-2 font-title font-bold">
-              OM OSS
-            </h3>
+          <Badge content="Om oss" />
+
           </div>
           <div>
-            <h2 className="text-3xl md:text-5xl font-title font-bold text-dark-blue">
+            <h2 className="text-3xl md:text-5xl font-title text-dark-blue uppercase">
 Din pålitliga partner för köp och försäljning, i Sverige och internationellt
             </h2>
           </div>
@@ -34,13 +34,23 @@ Din pålitliga partner för köp och försäljning, i Sverige och internationell
 
           {/* Middle: Statistics Card */}
           <div className="bg-white rounded-3xl p-8 flex flex-col justify-center items-center">
-            <div className="text-center">
-              <div className="text-7xl md:text-8xl font-title font-bold text-dark-blue mb-4" style={{ WebkitTextStroke: '2px', WebkitTextFillColor: 'transparent', WebkitTextStrokeColor: '#1e3a8a' }}>
-                200+
+            <div className="text-center space-y-6">
+              <div>
+                <div className="text-7xl md:text-8xl font-bold text-dark-blue mb-4" style={{ WebkitTextStroke: '2px', WebkitTextFillColor: 'transparent', WebkitTextStrokeColor: '#1e3a8a' }}>
+                  200+
+                </div>
+                <p className="text-lg text-gray-700 font-medium">
+                  Lastbilar köpta per år
+                </p>
               </div>
-              <p className="text-lg text-gray-700 font-medium">
-                Lastbilar köpta per år
-              </p>
+              <div>
+                <div className="text-7xl md:text-8xl font-bold text-dark-blue mb-4" style={{ WebkitTextStroke: '2px', WebkitTextFillColor: 'transparent', WebkitTextStrokeColor: '#1e3a8a' }}>
+                  20+
+                </div>
+                <p className="text-lg text-gray-700 font-medium">
+                  Länder exporterat till
+                </p>
+              </div>
             </div>
           </div>
 
@@ -76,12 +86,12 @@ Din pålitliga partner för köp och försäljning, i Sverige och internationell
             {/* CTA Button */}
             <Link
               href="/om-oss"
-              className="inline-flex items-center gap-3 border-2 border-dark-blue text-dark-blue px-6 py-3 rounded-full font-title text-base hover:bg-dark-blue hover:text-white transition-all duration-300 w-fit"
+              className="inline-flex items-center gap-3 border-2 bg-dark-blue text-white px-4 py-2 rounded-md font-bold text-base hover:bg-dark-blue hover:text-white transition-all duration-300 w-fit text-sm"
             >
               <span>Läs mer om oss</span>
-              <div className="bg-dark-blue rounded-full p-2">
+              <div className="bg-white rounded-sm p-2">
                 <svg
-                  className="w-4 h-4 text-white"
+                  className="w-4 h-4 text-dark-blue"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

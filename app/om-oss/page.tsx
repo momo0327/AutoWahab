@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import Badge from '../components/Badge';
+import CTAButton from '../components/CTAButton';
 
 export default function OmOss() {
   return (
@@ -8,20 +10,22 @@ export default function OmOss() {
       <Navbar transparent={false} />
 
       {/* Hero Section - Title Left, Image Right */}
-      <section className="pt-48 pb-16 px-4 bg-white">
+      <section className="pt-48 pb-16 px-4 bg-bg">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left - Title */}
             <div>
-              <p className="text-lg md:text-xl text-light-blue font-semibold mb-4">Om oss</p>
-              <h1 className="text-5xl md:text-6xl lg:text-6xl font-title text-dark-blue leading-tight mb-6">
+              <div className='py-4'>
+              <Badge content="Om oss" />
+              </div>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-title text-dark-blue leading-none mb-6 uppercase">
                 Din pålitliga lastbilshandlare
               </h1>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
                 Med över 20 års erfarenhet hjälper vi företag och privatpersoner att köpa och sälja lastbilar i Sverige och internationellt
               </p>
 
-              {/* CTA Button */}
+              {/* CTA Button
               <a
                 href="tel:0723364384"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-title text-sm font-bold transition-all duration-300 bg-dark-blue text-white border border-dark-blue hover:bg-light-blue hover:border-light-blue"
@@ -40,13 +44,14 @@ export default function OmOss() {
                     />
                   </svg>
                 </div>
-              </a>
+              </a> */}
+              <CTAButton text="Ring oss idag" href="/kontakt" bgColor="dark-blue" />
             </div>
 
             {/* Right - Hero Image */}
-            <div className="relative w-full h-[300px] lg:h-[380px] rounded-2xl overflow-hidden">
+            <div className="relative w-full h-[300px] lg:h-[380px] rounded-lg overflow-hidden">
               <Image
-                src="/PHOTO-2026-04-21-20-02-53.jpg"
+                src="/test7.jpg"
                 alt="AutoWahab lastbilar"
                 fill
                 className="object-cover"
@@ -58,9 +63,9 @@ export default function OmOss() {
       </section>
 
       {/* Company Story with Images */}
-      <section className="py-20 px-4 bg-bg-color">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-title text-dark-blue mb-16 text-center">Vår Historia</h2>
+          <h2 className="text-3xl md:text-4xl font-title text-dark-blue mb-16 text-center uppercase">Vår Historia</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
@@ -112,7 +117,7 @@ export default function OmOss() {
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-bg-color">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-title text-dark-blue mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-title text-dark-blue mb-16 text-center uppercase">
             Varför Välja Oss
           </h2>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Red_Hat_Display } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import TopBanner from "./components/TopBanner";
 
@@ -13,10 +14,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const redHatDisplay = Red_Hat_Display({
-  weight: "700",
+const nationalCondensed = localFont({
+  src: "../fonts/National 2 Condensed Bold.ttf",
   variable: "--font-title",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="sv">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${redHatDisplay.variable} antialiased bg-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nationalCondensed.variable} antialiased bg-white`}
       >
         <TopBanner />
         {children}

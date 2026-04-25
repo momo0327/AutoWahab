@@ -3,10 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   --dark-blue: #0D1526;
   --light-blue: #89A5E2;
   --bg-color: #fff;
+  --badgeBG: #EAE8E8;
 }
 
 @theme inline {
@@ -14,11 +15,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-title: 'Red Hat Display', sans-serif;
+  --font-title: var(--font-title);
   --color-dark-blue: #0D1526;
   --color-light-blue: #89A5E2;
   --color-bg: #F8FAFE;
   --color-bg-color: #F8FAFE;
+  --color-badgeBG: #EAE8E8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,7 +37,7 @@ body {
 }
 
 .title-font {
-  font-family: 'Anton', sans-serif;
+  font-family: var(--font-title), sans-serif;
   letter-spacing: 0.05em;
 }
 

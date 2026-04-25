@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import CTAButton from './CTAButton';
 
 export default function Navbar({ transparent = false }: { transparent?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +71,7 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
             >
               Blocketbutik
             </a>
-            <a
+            {/* <a
               href="tel:0723364384"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-title text-sm font-bold transition-all duration-300 bg-white/90 backdrop-blur-md text-dark-blue border border-white/50 hover:bg-white"
             >
@@ -88,7 +89,8 @@ export default function Navbar({ transparent = false }: { transparent?: boolean 
                   />
                 </svg>
               </div>
-            </a>
+            </a> */}
+              <CTAButton text="Ring oss idag" href="/kontakt" bgColor="white" />
           </div>
 
           {/* Mobile Menu Button */}

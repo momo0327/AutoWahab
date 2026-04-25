@@ -40,7 +40,7 @@ export default function FAQ() {
   return (
     <section className="py-24 md:py-32 px-4 bg-white">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-title font-bold text-dark-blue mb-4 text-center">
+        <h2 className="text-3xl md:text-5xl font-title font-bold text-dark-blue mb-4 text-center uppercase">
           Vanliga Frågor
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
