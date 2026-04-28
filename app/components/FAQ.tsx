@@ -17,12 +17,8 @@ const faqData: FAQItem[] = [
     answer: "Ja, vi köper lastbilar i hela Sverige och kan hämta var du än befinner dig."
   },
   {
-    question: "Vilka modeller köper ni?",
-    answer: "Vi köper alla typer av lastbilar, allt från dragbilar, skåpbilar, kranbilar, kranväxlare, krokbilar, timmerbilar, chassi osv."
-  },
-  {
     question: "Vilka märken köper ni?",
-    answer: "Vi alla märken, Volvo, Scania, Mercedes, Man och Daf"
+    answer: "Vi köper alla märken, Volvo, Scania, Mercedes, Man och Daf"
   },
   {
     question: "Hur fungerar betalningen?",
@@ -44,7 +40,7 @@ export default function FAQ() {
           Vanliga Frågor
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Här hittar du svar på de vanligaste frågorna om att sälja din lastbil till oss
+          Här hittar du svar på de vanligaste frågorna.
         </p>
 
         <div className="divide-y divide-gray-200">

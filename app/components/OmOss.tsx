@@ -45,7 +45,7 @@ Din pålitliga partner för köp och försäljning, i Sverige och internationell
               </div>
               <div>
                 <div className="text-7xl md:text-8xl font-bold text-dark-blue mb-4" style={{ WebkitTextStroke: '2px', WebkitTextFillColor: 'transparent', WebkitTextStrokeColor: '#1e3a8a' }}>
-                  20+
+                  25+
                 </div>
                 <p className="text-lg text-gray-700 font-medium">
                   Länder exporterat till
@@ -78,7 +78,7 @@ Din pålitliga partner för köp och försäljning, i Sverige och internationell
                 <svg className="w-5 h-5 text-light-blue mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span className="text-gray-700">Vi hämtar vart än du befinner dig i Sverige
+                <span className="text-gray-700">Vi hämtar vart du än befinner dig i Sverige
 </span>
               </div>
             </div>

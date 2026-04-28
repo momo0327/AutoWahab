@@ -39,7 +39,7 @@ export default function Home() {
             Vi köper lastbilar <br /> tryggt & enkelt
           </h1>
           <p className="text-md md:text-xl text-white/80 mb-8 max-w-sm md:max-w-xl">
-            Med över 20 års erfarenhet köper och säljer vi lastbilar med en smidig och trygg process från start till betalning. Kontakta oss för en enkel och smidig affär 
+            Med över 20 års erfarenhet köper och säljer vi lastbilar med en smidig och trygg process från start till betalning. Kontakta oss för en enkel och smidig affär.
           </p>
           {/* <a
             href="#offert-form"
