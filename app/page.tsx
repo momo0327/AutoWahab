@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </a> */}
 
-          <CTAButton text="Sälj din Lastbil" href="#offert-form" />
+          <CTAButton text="Sälj Din Lastbil" href="#offert-form" />
         </div>
       </section>
 

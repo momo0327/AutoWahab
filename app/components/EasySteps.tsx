@@ -25,7 +25,7 @@ export default function EasySteps() {
             </div>
             <h3 className="text-2xl font-title font-bold text-dark-blue uppercase mb-4">Kontakta Oss</h3>
             <p className="text-gray-600 text-base leading-relaxed">
-              Fyll i formuläret eller ring oss direkt. Berätta om din lastbil och vi hjälper dig vidare
+              Fyll i formuläret eller ring oss direkt. Berätta om din lastbil och vi hjälper dig vidare.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function EasySteps() {
             </div>
             <h3 className="text-2xl font-title font-bold uppercase mb-4">Ta Emot Offert</h3>
             <p className="text-white/90 text-base leading-relaxed">
-              Vi återkommer snabbt med ett rättvist och konkurrenskraftigt erbjudande på din lastbil
+              Vi återkommer snabbt med ett rättvist och konkurrenskraftigt erbjudande på din lastbil.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function EasySteps() {
             </div>
             <h3 className="text-2xl font-title font-bold uppercase text-dark-blue mb-4">Få Betalt</h3>
             <p className="text-gray-600 text-base leading-relaxed">
-              Vi hämtar lastbilen och du får betalt direkt. Snabbt, enkelt och tryggt
+              Vi hämtar lastbilen och du får betalt direkt. Snabbt, enkelt och tryggt.
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     question: "Vart finns ni?",
-    answer: "Vi finns i Göteborg, Gamlestadsvägen 20A"
+    answer: "Vi finns i Göteborg, Gamlestadsvägen 20A."
   },
   {
     question: "Köper ni i hela Sverige?",
@@ -18,11 +18,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Vilka märken köper ni?",
-    answer: "Vi köper alla märken, Volvo, Scania, Mercedes, Man och Daf"
+    answer: "Vi köper alla märken, Volvo, Scania, Mercedes, Man och Daf."
   },
   {
     question: "Hur fungerar betalningen?",
-    answer: "Vi betalar direkt efter vi har fått fakturan"
+    answer: "Vi betalar direkt efter vi har fått fakturan."
   }
 ];
 

@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Image from 'next/image';
 import Badge from '../components/Badge';
 import CTAButton from '../components/CTAButton';
+import OurLager from '../components/OurLager';
 
 export default function OmOss() {
   return (
@@ -84,7 +85,7 @@ export default function OmOss() {
             </div>
             <div className="relative w-full h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="/PHOTO-2026-04-21-20-03-05.jpg"
+                src="/3.jpg"
                 alt="AutoWahab verksamhet"
                 fill
                 className="object-cover"
@@ -95,7 +96,7 @@ export default function OmOss() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
             <div className="relative w-full h-[400px] rounded-2xl overflow-hidden order-2 lg:order-1">
               <Image
-                src="/PHOTO-2026-04-21-20-06-30.jpg"
+                src="/2.jpg"
                 alt="Lastbilar hos AutoWahab"
                 fill
                 className="object-cover"
@@ -196,34 +197,7 @@ export default function OmOss() {
 
       {/* Image Gallery Section */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="relative h-[280px] rounded-2xl overflow-hidden">
-              <Image
-                src="/PHOTO-2026-04-21-20-06-36.jpg"
-                alt="Lastbil 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[280px] rounded-2xl overflow-hidden">
-              <Image
-                src="/PHOTO-2026-04-21-20-12-20.jpg"
-                alt="Lastbil 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[280px] rounded-2xl overflow-hidden">
-              <Image
-                src="/PHOTO-2026-04-21-20-12-54.jpg"
-                alt="Lastbil 3"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
+       <OurLager/>
       </section>
 
       <Footer />
