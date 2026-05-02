@@ -20,6 +20,7 @@ const nationalCondensed = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://autowahab.se'),
   title: "AutoWahab - Vi Köper Era Lastbilar",
   description: "Sälj din lastbil snabbt och enkelt till AutoWahab. Få en offert idag!",
 };

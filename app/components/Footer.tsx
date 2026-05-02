@@ -38,7 +38,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://www.blocket.se" target="_blank" rel="noopener noreferrer" className="text-gray-900  hover:text-light-blue transition-colors">
+                <a href="https://www.blocket.se/mobility/dealer/4729472/auto-wahab-export-ab" target="_blank" rel="noopener noreferrer" className="text-gray-900  hover:text-light-blue transition-colors">
                   Blocketbutik
                 </a>
               </li>
