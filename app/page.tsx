@@ -64,7 +64,21 @@ export default function Home() {
             </div>
           </a> */}
 
-          <CTAButton text="Sälj Din Lastbil" href="#offert-form" />
+          <div className="flex flex-wrap gap-4">
+            <CTAButton text="Sälj Din Lastbil" href="#offert-form" bgColor="white" />
+            <a
+              href="/kontakt"
+              className="inline-flex items-center justify-between gap-3 px-4 py-2 rounded-md text-sm font-bold border-2 border-white text-white hover:bg-white/10 transition-all duration-300"
+              style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}
+            >
+              <span>Kontakta oss</span>
+              <div className="rounded-lg p-1.5 bg-white">
+                <svg className="w-4 h-4 text-dark-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -73,7 +87,7 @@ export default function Home() {
       <EasySteps />
       <OurLager />
       <FAQ />
-      {/* <CTA /> */}
+      <CTA />
       <Footer />
     </div>
   );

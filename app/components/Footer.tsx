@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-bg text-dark-blue py-20 md:py-24 px-4">
+    <footer className="bg-dark-blue text-white py-20 md:py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <div className="mb-4">
               <Image
-                src="/logo1.png"
+                src="/logo2.png"
                 alt="AutoWahab Logo"
                 width={150}
                 height={60}
@@ -18,7 +18,7 @@ export default function Footer() {
                 unoptimized
               />
             </div>
-            <p className="text-gray-900 text-sm leading-relaxed">
+            <p className="text-gray-300 text-sm leading-relaxed">
               Din pålitliga partner för lastbilsköp i hela Sverige. Vi erbjuder snabba och rättvisa värderingar.
             </p>
           </div>
@@ -28,17 +28,17 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Snabblänkar</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-900 hover:text-light-blue transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-light-blue transition-colors">
                   Hem
                 </Link>
               </li>
               <li>
-                <Link href="/om-oss" className="text-gray-900 hover:text-light-blue transition-colors">
+                <Link href="/om-oss" className="text-gray-300 hover:text-light-blue transition-colors">
                   Om Oss
                 </Link>
               </li>
               <li>
-                <a href="https://www.blocket.se/mobility/dealer/4729472/auto-wahab-export-ab" target="_blank" rel="noopener noreferrer" className="text-gray-900  hover:text-light-blue transition-colors">
+                <a href="https://www.blocket.se/mobility/dealer/4729472/auto-wahab-export-ab" target="_blank" rel="noopener noreferrer" className="text-gray-300  hover:text-light-blue transition-colors">
                   Blocketbutik
                 </a>
               </li>
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakta Oss</h4>
-            <ul className="space-y-2 text-gray-900 text-sm">
+            <ul className="space-y-2 text-gray-300 text-sm">
               <li className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -82,8 +82,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 pt-6 mt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-900">
+        <div className="border-t border-white/20 pt-6 mt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
             <p>&copy; 2024 AutoWahab. Alla rättigheter förbehållna.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-light-blue transition-colors">

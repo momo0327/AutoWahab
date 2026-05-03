@@ -46,7 +46,7 @@ export default function OmOss() {
                   </svg>
                 </div>
               </a> */}
-              <CTAButton text="Ring oss idag" href="/kontakt" bgColor="dark-blue" />
+              <CTAButton text="Kontakta oss" href="/kontakt" bgColor="dark-blue" />
             </div>
 
             {/* Right - Hero Image */}
