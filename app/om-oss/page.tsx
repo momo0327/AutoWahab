@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Badge from '../components/Badge';
 import CTAButton from '../components/CTAButton';
 import OurLager from '../components/OurLager';
+import CTA from '../components/CTA';
 
 export default function OmOss() {
   return (
@@ -199,7 +200,7 @@ export default function OmOss() {
       <section className="py-20 px-4 bg-white">
        <OurLager/>
       </section>
-
+      <CTA/>
       <Footer />
     </div>
   );

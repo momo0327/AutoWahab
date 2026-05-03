@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Badge from '../components/Badge';
 import FAQ from '../components/FAQ';
 import KontaktForm from './KontaktForm';
+import CTA from '../components/CTA';
 
 export default function Kontakt() {
   return (
@@ -115,7 +116,7 @@ export default function Kontakt() {
 
       {/* FAQ Section */}
       <FAQ />
-
+      <CTA />
       <Footer />
     </div>
   );
