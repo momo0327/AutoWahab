@@ -8,7 +8,7 @@ export default function CTA() {
           {/* Left - Text and Buttons */}
           <div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-title text-dark-blue mb-4 uppercase leading-tight">
-              Köp eller sälj en din lastbil
+              Köp eller sälj din lastbil
             </h2>
             <p className="text-dark-blue/80 text-lg mb-8">
               Vi hjälper dig med hela processen — snabbt, enkelt och tryggt.
