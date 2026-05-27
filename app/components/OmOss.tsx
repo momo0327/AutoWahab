@@ -24,7 +24,7 @@ Din pålitliga partner för köp och försäljning, i Sverige och internationell
           {/* Left: Square Image */}
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="/test5.jpg"
+              src="/aboutPage.JPG"
               alt="AutoWahab Lastbilar"
               fill
               className="object-cover"

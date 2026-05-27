@@ -18,12 +18,6 @@ const truckTypes = [
   'Timmerbil', 'Tippbil', 'Växelflak/Containerbil',
 ];
 
-const truckBrands = [
-  'Volvo', 'Scania', 'Mercedes-Benz', 'MAN', 'DAF', 'Iveco', 'Renault', 'Ford', 'Annat',
-];
-
-const currentYear = new Date().getFullYear();
-const years = Array.from({ length: 30 }, (_, i) => String(currentYear - i));
 
 function SuccessMessage({ onReset, label }: { onReset: () => void; label: string }) {
   return (
@@ -55,7 +49,7 @@ export default function OffertForm() {
   const [sellSubmitting, setSellSubmitting] = useState(false);
 
   // Buy form
-  const [buyData, setBuyData] = useState({ name: '', companyName: '', email: '', phone: '', brand: '', truckType: '', year: '' });
+  const [buyData, setBuyData] = useState({ name: '', companyName: '', email: '', phone: '', truckType: '', message: '' });
   const [buySubmitted, setBuySubmitted] = useState(false);
   const [buyError, setBuyError] = useState(false);
   const [buySubmitting, setBuySubmitting] = useState(false);
@@ -90,7 +84,7 @@ export default function OffertForm() {
       });
       if (res.ok) {
         setBuySubmitted(true);
-        setBuyData({ name: '', companyName: '', email: '', phone: '', brand: '', truckType: '', year: '' });
+        setBuyData({ name: '', companyName: '', email: '', phone: '', truckType: '', message: '' });
       } else setBuyError(true);
     } catch { setBuyError(true); }
     finally { setBuySubmitting(false); }
@@ -150,6 +144,7 @@ export default function OffertForm() {
             <SuccessMessage onReset={() => setBuySubmitted(false)} label="Skicka en ny förfrågan" />
           ) : (
             <form onSubmit={handleBuySubmit} className="space-y-4">
+              <p className="text-sm text-gray-400 -mt-3 mb-4">Matchar med löpande kunder</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input type="text" placeholder="Namn" value={buyData.name} onChange={e => setBuyData({ ...buyData, name: e.target.value })} required className={inputClass} />
                 <input type="text" placeholder="Företagsnamn" value={buyData.companyName} onChange={e => setBuyData({ ...buyData, companyName: e.target.value })} required className={inputClass} />
@@ -158,20 +153,11 @@ export default function OffertForm() {
                 <input type="email" placeholder="E-post" value={buyData.email} onChange={e => setBuyData({ ...buyData, email: e.target.value })} required className={inputClass} />
                 <input type="tel" placeholder="Telefonnummer" value={buyData.phone} onChange={e => setBuyData({ ...buyData, phone: e.target.value })} required className={inputClass} />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <select value={buyData.brand} onChange={e => setBuyData({ ...buyData, brand: e.target.value })} required className={`${inputClass} appearance-none cursor-pointer`} style={selectStyle}>
-                  <option value="">Märke på lastbil</option>
-                  {truckBrands.map(b => <option key={b} value={b}>{b}</option>)}
-                </select>
-                <select value={buyData.truckType} onChange={e => setBuyData({ ...buyData, truckType: e.target.value })} required className={`${inputClass} appearance-none cursor-pointer`} style={selectStyle}>
-                  <option value="">Typ av lastbil</option>
-                  {truckTypes.map(t => <option key={t} value={t}>{t}</option>)}
-                </select>
-              </div>
-              <select value={buyData.year} onChange={e => setBuyData({ ...buyData, year: e.target.value })} required className={`${inputClass} appearance-none cursor-pointer`} style={selectStyle}>
-                <option value="">Årsmodell</option>
-                {years.map(y => <option key={y} value={y}>{y}</option>)}
+              <select value={buyData.truckType} onChange={e => setBuyData({ ...buyData, truckType: e.target.value })} required className={`${inputClass} appearance-none cursor-pointer`} style={selectStyle}>
+                <option value="">Typ av lastbil</option>
+                {truckTypes.map(t => <option key={t} value={t}>{t}</option>)}
               </select>
+              <textarea placeholder="Övrigt" value={buyData.message} onChange={e => setBuyData({ ...buyData, message: e.target.value })} rows={4} className={`${inputClass} resize-none`} />
               {buyError && <p className="text-sm text-red-500">Ett fel uppstod. Vänligen försök igen.</p>}
               <button type="submit" disabled={buySubmitting} className="w-full bg-dark-blue text-white py-4 px-6 rounded-lg font-semibold hover:bg-light-blue transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
                 {buySubmitting ? 'Skickar...' : 'Skicka förfrågan'}

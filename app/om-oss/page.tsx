@@ -53,10 +53,10 @@ export default function OmOss() {
             {/* Right - Hero Image */}
             <div className="relative w-full h-[300px] lg:h-[380px] rounded-lg overflow-hidden">
               <Image
-                src="/test7.jpg"
+                src="/aboutImage.JPG"
                 alt="AutoWahab lastbilar"
                 fill
-                className="object-cover"
+                className="object-cover scale-x-[-1]"
                 priority
               />
             </div>
